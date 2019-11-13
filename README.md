@@ -2,7 +2,7 @@
 
 <img src="./images/python.png"
      alt="python logo"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px; width:200px;height:200px" />
 
 Solutions over Pycharm and code based in Python2.7 and Python3
 
