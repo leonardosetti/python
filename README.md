@@ -1,6 +1,6 @@
 # Python Initiatives
 
-<img src="./images/python.png.png"
+<img src="./images/python.png"
      alt="python logo"
      style="float: left; margin-right: 10px;" />
 
@@ -10,11 +10,11 @@ All solutions are ongoing approach for dummy questions thus, there is nos profes
 
 ## Goals definitions
 
-- [x]Perform basics with Python
-- []Mastering IDE for Python
-- []develop personal solutions 
-- []Start QA automation based on Python and supported frameworks
-- []Find QA challenges
+- Perform basics with Python
+- Mastering IDE for Python
+- develop personal solutions 
+- Start QA automation based on Python and supported frameworks
+- Find QA challenges
 
 ### Perform basics
 
