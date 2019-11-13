@@ -5,7 +5,6 @@
      style="float: left; margin-right: 10px;"
      width=48px height=48px />
 
-
 Solutions over Pycharm and code based in Python2.7 and Python3
 
 All solutions are ongoing approach for dummy questions thus, there is nos professional solutions here.
