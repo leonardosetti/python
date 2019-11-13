@@ -1,9 +1,6 @@
 # Python Initiatives
 
-<img src="./images/python.png"
-     alt="python logo"
-     style="float: left; margin-right: 10px;"
-     style="width:48px;height:48px;" />
+![](images/python.png =48x48)
 
 Solutions over Pycharm and code based in Python2.7 and Python3
 
