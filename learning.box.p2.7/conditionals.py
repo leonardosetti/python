@@ -46,14 +46,14 @@ elif diff_less_inss <= float(4664.68):
 else:
     irrf = (diff_less_inss * 0.227-(869.36))
 
-print('Salary fix 2018: R$' + (str(salary_fix_1)))
-print('Salary fix 2019: R$' + (str(salary_fix_2)))
-print('The difference without taxes: R$' + (str(total_diff)))
-print('INSS: R$' + (str(inss)))
+print('Salary fix 2018: R$' + f'{float(salary_fix_1):.2f}')
+print('Salary fix 2019: R$' + f'{float(salary_fix_1):.2f}')
+print('The difference without taxes: R$' + f'{float(total_diff):.2f}')
+print('INSS: R$' + f'{float(inss):.2f}')
 
 if irrf == 'ISENTO':
     taxes = (float(inss))
-    print('IRRF: {0}'.format((irrf)))
+    print(f'IRRF: {irrf}')
 
 else:
     taxes = (float(inss)+float(irrf))
