@@ -1,30 +1,26 @@
 #!/usr/bin/env python3
-# calculo Dissidio Wipro
 
 current_salary = eval(input('Type your current salary here: R$'))
 print('')
 december_discount = eval(input('Type 12/2018 advanced payment here: R$'))
+print('')
 # band_raise= eval(input('Type your current salary raised here: '))
-print('')
+#print('')
 # qplc = eval(input('Type your May qplc here: '))
-print('')
-
+#print('')
 # print (qplc+(qplc*0.05))
-
+#print('')
 adjustment_1 = 1.69
 adjustment_2 = 5.07
-part_diff_1 = ("%.2f" % (current_salary * (adjustment_1 / 100)))
-part_diff_2 = ("%.2f" % (current_salary * (adjustment_2 / 100)))
-
-salary_fix_1 = ("%.2f" % (current_salary + (current_salary * (adjustment_1 / 100))))
-
-salary_fix_2 = ("%.2f" % (float(salary_fix_1) + float(salary_fix_1) * (adjustment_2 / 100)))
-
-total_diff = ((float(part_diff_1) * 14) + (float(part_diff_2) * 7))
-
 inss = 0
 irrf = 0
 taxes = 0
+
+part_diff_1 = ("%.2f" % (current_salary * (adjustment_1 / 100)))
+part_diff_2 = ("%.2f" % (current_salary * (adjustment_2 / 100)))
+salary_fix_1 = ("%.2f" % (current_salary + (current_salary * (adjustment_1 / 100))))
+salary_fix_2 = ("%.2f" % (float(salary_fix_1) + float(salary_fix_1) * (adjustment_2 / 100)))
+total_diff = ((float(part_diff_1) * 14) + (float(part_diff_2) * 7))
 
 if total_diff <= float(1751.81):
     inss = ("%.2f" % (total_diff * 0.08))
@@ -36,6 +32,7 @@ else:
     inss = ("%.2f" % (642.34))
 
 diff_less_inss = (float(total_diff)-float(inss))
+
 if diff_less_inss <= float(1903.99):
     irrf='ISENTO'
 elif diff_less_inss <= float(2826.65):
@@ -55,14 +52,11 @@ print('INSS: R$' + f'{float(inss):.2f}')
 if irrf == 'ISENTO':
     taxes = (float(inss))
     print(f'IRRF: {irrf}')
-
 else:
     taxes = (float(inss)+float(irrf))
     print('IRRF: R$' + f'{float(irrf):.2f}')
 
-
 expected_incoming = (float(total_diff) - float(taxes) - float(december_discount))
-
 print('')
 
 print('Total extra incoming expected: R$' + f'{float(expected_incoming):.2f}')
