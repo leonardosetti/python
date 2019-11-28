@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # calculo Dissidio Wipro
 
-current_salary = eval(input('Type your current salary here: '))
+current_salary = eval(input('Type your current salary here: R$'))
 print('')
+december_discount = eval(input('Type 12/2018 advanced payment here: R$'))
 # band_raise= eval(input('Type your current salary raised here: '))
 print('')
 # qplc = eval(input('Type your May qplc here: '))
@@ -60,7 +61,7 @@ else:
     print('IRRF: R$' + f'{float(irrf):.2f}')
 
 
-expected_incoming = (float(total_diff) - float(taxes))
+expected_incoming = (float(total_diff) - float(taxes) - float(december_discount))
 
 print('')
 
