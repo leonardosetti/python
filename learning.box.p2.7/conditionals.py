@@ -3,17 +3,8 @@
 current_salary = eval(input('Type your current salary here: R$'))
 print('')
 december_discount = eval(input('Type 12/2018 advanced payment here: R$'))
-<<<<<<< HEAD
-# band_raise= eval(input('Type your current salary raised here: '))
-=======
->>>>>>> 50034a15685772023e224e113c5f0fe75ae938d8
 print('')
-# band_raise= eval(input('Type your current salary raised here: '))
-#print('')
-# qplc = eval(input('Type your May qplc here: '))
-#print('')
-# print (qplc+(qplc*0.05))
-#print('')
+
 adjustment_1 = 1.69
 adjustment_2 = 5.07
 inss = 0
@@ -49,7 +40,7 @@ else:
     irrf = (diff_less_inss * 0.227-(869.36))
 
 print('Salary fix 2018: R$' + f'{float(salary_fix_1):.2f}')
-print('Salary fix 2019: R$' + f'{float(salary_fix_1):.2f}')
+print('Salary fix 2019: R$' + f'{float(salary_fix_2):.2f}')
 print('The difference without taxes: R$' + f'{float(total_diff):.2f}')
 print('INSS: R$' + f'{float(inss):.2f}')
 
@@ -59,15 +50,9 @@ if irrf == 'ISENTO':
 else:
     taxes = (float(inss)+float(irrf))
     print('IRRF: R$' + f'{float(irrf):.2f}')
-
-<<<<<<< HEAD
-
-expected_incoming = (float(total_diff) - float(taxes) - float(december_discount))
-
-=======
-expected_incoming = (float(total_diff) - float(taxes) - float(december_discount))
->>>>>>> 50034a15685772023e224e113c5f0fe75ae938d8
 print('')
+
+expected_incoming = (float(total_diff) - float(taxes) - float(december_discount))
 
 print('Total extra incoming expected: R$' + f'{float(expected_incoming):.2f}')
 print('')
