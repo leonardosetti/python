@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+"""#!/usr/bin/env python3
 
 # Fixed values to work
 
@@ -10,3 +10,5 @@ taxes = 0
 
 
 #control_test()
+
+"""

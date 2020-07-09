@@ -26,18 +26,18 @@ elif total_diff <= float(5839.45):
 else:
     inss = ("%.2f" % (642.34))
 
-diff_less_inss = (float(total_diff)-float(inss))
+diff_less_inss = (float(total_diff) - float(inss))
 
 if diff_less_inss <= float(1903.99):
-    irrf='ISENTO'
+    irrf = 'ISENTO'
 elif diff_less_inss <= float(2826.65):
-    irrf = (diff_less_inss * 0.075-(142.8))
+    irrf = (diff_less_inss * 0.075 - (142.8))
 elif diff_less_inss <= float(3751.05):
-    irrf = (diff_less_inss * 0.15-(354.8))
+    irrf = (diff_less_inss * 0.15 - (354.8))
 elif diff_less_inss <= float(4664.68):
-    irrf = (diff_less_inss * 0.225-(636.13))
+    irrf = (diff_less_inss * 0.225 - (636.13))
 else:
-    irrf = (diff_less_inss * 0.227-(869.36))
+    irrf = (diff_less_inss * 0.227 - (869.36))
 
 print('Salary fix 2018: R$' + f'{float(salary_fix_1):.2f}')
 print('Salary fix 2019: R$' + f'{float(salary_fix_2):.2f}')
@@ -48,7 +48,7 @@ if irrf == 'ISENTO':
     taxes = (float(inss))
     print(f'IRRF: {irrf}')
 else:
-    taxes = (float(inss)+float(irrf))
+    taxes = (float(inss) + float(irrf))
     print('IRRF: R$' + f'{float(irrf):.2f}')
 print('')
 
