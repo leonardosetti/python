@@ -10,7 +10,7 @@ Esta é uma implementção n00b, com base em objetivo específico do programador
 """
 
 current_salary = eval(input(f"Insira o valor do seu salário atual:\nR$ "))
-december_discount = eval(input(f"Insira o valor do adiantamento em 12/2018:\nR$ "))
+december_discount = eval(input(f"\nInsira o valor do adiantamento em 12/2018:\nR$ "))
 
 adjustment_1 = 1.69
 adjustment_2 = 5.07
@@ -46,10 +46,10 @@ elif diff_less_inss <= float(4664.68):
 else:
     irrf = (diff_less_inss * 0.227 - 869.36)
 
-print(f"Salary fix 2018:\nR$ {float(salary_fix_1):.2f}\n")
-print(f"Salary fix 2019: R$' + f'{float(salary_fix_2):.2f}\n")
-print(f"The difference without taxes: R$' + f'{float(total_diff):.2f}\n")
-print(f"INSS: R$' + f'{float(inss):.2f}\n")
+print(f"Ajuste em salário base 2018:\nR$ {float(salary_fix_1):.2f}\n")
+print(f"Ajuste em salário base 2019:\nR$ {float(salary_fix_2):.2f}\n")
+print(f"Diferença sem as taxas:\nR$ {float(total_diff):.2f}\n")
+print(f"INSS:\nR$ {float(inss):.2f}\n")
 
 if irrf == "ISENTO":
     taxes = (float(inss))
@@ -60,4 +60,4 @@ else:
 
 expected_incoming = (float(total_diff) - float(taxes) - float(december_discount))
 
-print(f"Total extra incoming expected:\nR$ {float(expected_incoming):.2f}\n")
+print(f"Total adicional estimado:\nR$ {float(expected_incoming):.2f}\n")
