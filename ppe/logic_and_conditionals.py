@@ -1,4 +1,13 @@
-""" Exercise for logic and conditionals in Python """
+""" Exercise for logic and conditionals in Python
+
+TODO:
+    1. Refactor the displayable messages, you have used many 'user_name' instances. Itg seems too redundant
+    2. Think in implement short code and keep the same flow of logic decision
+    3. Review typos
+    4. Standardize labels and messages. Set all to PT-Br
+
+All following code uses only IF statements and the Binary and Unary blocks of decision
+"""
 
 # Use 'if' statement with binary decision 'AND' and 'OR'
 
@@ -23,7 +32,7 @@ if decision_login[0] == "Y":
     login_state = True
     print(f"{user_name}, você realizou o processo de login com sucesso. Vamos ao próximo passo.\n")
 elif decision_login[0] == "N":
-    print(f"Ora {user_name}, você ecolheu '{decision_login}', neste caso o login não foi realizado.\n")
+    print(f"Ora {user_name}, você escolheu '{decision_login}', neste caso o login não foi realizado.\n")
     try_again = input(f"{user_name,}você gostaria de tentar mais uma vez?(Y/N)\n").upper()
     if try_again[0] == "Y":
         decision_login = input(f"{user_name}, você deseja realizar o login? (Y/N):\n").upper()
