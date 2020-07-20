@@ -15,6 +15,7 @@ active_state = False
 login_state = False
 
 user_name = input(f"Olá, por favor informe seu nome abaixo:\n").title()
+user_name = " ".join(user_name.split())
 user_gender = input(f"Escolha seu sexo (M/F/Outro):\n").upper()
 
 if user_gender[0] == "M":
@@ -24,28 +25,30 @@ elif user_gender[0] == "F":
 elif user_gender[0] == "O":
     print(f"Olá {user_name}\n")
 else:
-    print(f"Opa! Parece que você digitou '{user_gender}' por engano, infelizmente esta não é uma opção válida.\n")
+    print(f"Opa! Parece que você digitou '{user_gender}' por engano, infelizmente esta não é uma "
+          f"opção válida.\n")
 
-decision_login = input(f"{user_name}, você deseja realizar o login agora? (Y/N):\n").upper()
+decision_login = input(f"{user_name.split(' ',1)[0]}, você deseja realizar o login agora? (Y/N):\n").upper()
 
-if decision_login[0] == "Y":
+if (decision_login[0] == "Y") or (decision_login[0] == "S"):
     login_state = True
     print(f"{user_name}, você realizou o processo de login com sucesso. Vamos ao próximo passo.\n")
 elif decision_login[0] == "N":
-    print(f"Ora {user_name}, você escolheu '{decision_login}', neste caso o login não foi realizado.\n")
+    print(f"Ora {user_name.split(' ',1)[0]}, você escolheu '{decision_login}', neste caso o login não foi realizado.\n")
     try_again = input(f"{user_name,}você gostaria de tentar mais uma vez?(Y/N)\n").upper()
-    if try_again[0] == "Y":
-        decision_login = input(f"{user_name}, você deseja realizar o login? (Y/N):\n").upper()
-        if decision_login[0] == "Y":
+    if try_again[0] == "Y" or "S":
+        decision_login = input(f"{user_name.split(' ',1)[0]}, você deseja realizar o login? (Y/N):\n").upper()
+        if decision_login[0] == ("Y" or "S"):
             login_state = True
-            print(f"É isso aí {user_name}, você está logado!\n")
+            print(f"É isso aí {user_name.split(' ',1 )[0]}, você está logado!\n")
         elif decision_login[0] == "N":
-            print(f"Você escolheu a opção {decision_login}, portanto seguiremos ao próximo passso sem logar.\n")
+            print(f"Você escolheu a opção {decision_login}, portanto seguiremos ao próximo passo sem logar.\n")
         else:
             print(f"Parece que você digitou '{decision_login}' por engano, infelizmente esta não é uma opção "
                   f"válida.\nVamos ao próximo passo...\n")
     elif try_again[0] == "N":
-        print(f"Pois bem {user_name}, você decidiu por não realizar o login agora.\nVamos ao próximo passo...")
+        print(f"Pois bem {user_name.split(' ',1)[0]}, você decidiu por não realizar o login agora.\nVamos ao próximo "
+              f"passo...")
     else:
         print(f"Parece que você digitou '{try_again}' por engano, infelizmente esta não é uma opção "
               f"válida.\nVamos ao próximo passo...\n")
@@ -53,44 +56,44 @@ else:
     print(f"Parece que você digitou '{decision_login}' por engano, infelizmente esta não é uma opção "
           f"válida.\nVamos ao próximo passo...\n")
 
-decision_activate = input(f"{user_name}, gostaria de ativar seu usuário? (Y/N):\n").upper()
+decision_activate = input(f"{user_name.split(' ',1)[0]}, gostaria de ativar seu usuário? (Y/N):\n").upper()
 
-if decision_activate[0] == "Y":
+if (decision_activate[0] == "Y") or (decision_activate[0] == "S"):
     active_state = True
-    print(f"{user_name}, seu usuário foi ativado com sucesso!\n")
+    print(f"{user_name.split(' ',1)[0]}, seu usuário foi ativado com sucesso!\n")
 elif decision_activate[0] == "N":
-    print(f"O usuário '{user_name}' foi ativado com sucesso...")
+    print(f"O usuário '{user_name}' não pôde ser  ativado...")
 else:
     print(f"Parece que você digitou '{decision_activate}' por engano, infelizmente esta não é uma opção "
           f"válida.\nEncerrando este processo...\n")
 
-print(f"{user_name}, seu status ao final do processamento é:")
+print(f"{user_name.split(' ',1)[0]}, seu status ao final do processamento é:")
 if login_state is True:
-    print(f"{user_name} está logado!\n")
+    print(f"Logado com sucesso!")
 else:
-    print(f"{user_name} não está logado!\n")
+    print(f"Login falhou.!")
 
 if active_state is True:
-    print(f"{user_name} está ativo!\n")
+    print(f"Ativado com sucesso!")
 else:
-    print(f"{user_name} não está ativo!\n")
+    print(f"Ativação falhou!")
 
 if login_state and active_state is True:
-    print(f"{user_name}, você não possui pendências neste processo! Está habilitado.\n")
+    print(f"Você não possui pendências neste processo! Está habilitado.")
 elif login_state or active_state is not True:
-    print(f"You still pending in process... checking\n")
+    print(f"Você possui pendências neste processo")
 
 if login_state is False:
-    print(f"You didn't get in or something went wrong. Try login again\n")
+    print(f"Seu login falhou. Tente novamente.")
 else:
-    print(f"Login is OK, no issues here!\n")
+    print(f"Login realizado. Nâo há pendências neste passo.")
 
 if active_state is False:
-    print(f"You didn't get activated or something went wrong. Try activate again\n")
+    print(f"Seu usuário ainda não foi ativado. Tente novamente.")
 else:
-    print(f"Activation is OK, no issues here!\n\n")
+    print(f"Usuário ativo. Não há pendências neste passo!")
 
-print(f"Process has been done. For new validation, restart the program\n")
+print(f"Processamento finalizado. Para repetir, reinicie o programa.")
 
 active_state = False
 login_state = False
