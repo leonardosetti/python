@@ -19,7 +19,7 @@ user_name = " ".join(user_name.split())
 user_gender = input(f"Escolha seu sexo (M/F/Outro):\n").upper()
 
 if user_gender[0] == "M":
-    print(f"Bem vindo {user_name}!\n")
+    print(f"Bem vindo {user_name.split(' ',1)[0]}!\n")
 elif user_gender[0] == "F":
     print(f"Bem vinda {user_name}\n")
 elif user_gender[0] == "O":
