@@ -3,6 +3,7 @@ simple num check
 
 Verificar em uma série numérica iterável, quais números são pares ou ímpares
 Com input do usuário validar se o número é par ou ímpar
+Mostrar os Impares, Pares e Primos
 
 """
 # Scope of global variables:
@@ -10,6 +11,17 @@ Com input do usuário validar se o número é par ou ímpar
 inp_start_i_num = eval(input(f"Informe o primeiro número da série: \n"))
 inp_end_i_num = eval(input(f"Informe o último número da série: \n"))
 srl_num = range(inp_start_i_num, inp_end_i_num + 1)
+
+if inp_start_i_num % 2 != 0:
+    print(f"O número inicial da série é ímpar: {inp_start_i_num}")
+else:
+    print(f"O número inicial da série é par: {inp_start_i_num}")
+
+if inp_end_i_num % 2 != 0:
+    print(f"O número inicial da série é ímpar: {inp_end_i_num}")
+else:
+    print(f"O número inicial da série é par: {inp_end_i_num}")
+
 
 print("\nSérie completa:")
 
