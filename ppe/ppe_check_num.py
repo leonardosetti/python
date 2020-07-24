@@ -18,9 +18,9 @@ else:
     print(f"O número inicial da série é par: {inp_start_i_num}")
 
 if inp_end_i_num % 2 != 0:
-    print(f"O número inicial da série é ímpar: {inp_end_i_num}")
+    print(f"O número final da série é ímpar: {inp_end_i_num}")
 else:
-    print(f"O número inicial da série é par: {inp_end_i_num}")
+    print(f"O número final da série é par: {inp_end_i_num}")
 
 
 print("\nSérie completa:")
