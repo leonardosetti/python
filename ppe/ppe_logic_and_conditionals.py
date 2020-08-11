@@ -1,10 +1,6 @@
 """ Exercise for logic and conditionals in Python
 
 TODO:
-    1. Refactor the displayable messages, you have used many 'user_name' instances. Itg seems too redundant
-    2. Think in implement short code and keep the same flow of logic decision
-    3. Review typos
-    4. Standardize labels and messages. Set all to PT-Br
 
 All following code uses only IF statements and the Binary and Unary blocks of decision
 """
