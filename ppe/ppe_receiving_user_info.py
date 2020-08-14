@@ -1,8 +1,6 @@
 """
 This is just a simple exercise after environment setup
 The following small code demonstrates simple inputs from user and few code PEP8 practices.
-
-TODO: Arrange the remote stations to work with same environment presets
 """
 
 # simple input and variable set

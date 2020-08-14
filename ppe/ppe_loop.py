@@ -17,13 +17,13 @@ elif option[0] in ["N"]:
 else:
     print(f"YOU'VE BEEN KICKED OUT!")
 
-for item in "geek":
+for item in "removemefromthisworld":
     print(item)
 """
 for data_num in range(-1, 10):
     print(data_num + data_num)
 
-name = "leonardo setti".upper()
+name = "katyusha".upper()
 
 for index_char, char_name in enumerate(name):
     print(char_name)
@@ -39,3 +39,5 @@ def optional_item():
     else:
         print(f"Not YES --->{option}")
 
+
+optional_item()
