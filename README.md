@@ -1,8 +1,4 @@
-# Python Initiatives 
-<img src="./images/python.png"
-     alt="python logo"
-     style="float: center; margin-right: 10px;"
-     width=28px height=28px />
+<img src="./images/python.png"     alt="python logo"     style="float: center; margin-right: 10px;"     width=28px height=28px /> br # Python Initiatives 
 
 
 
@@ -28,6 +24,6 @@ RleHQiOiIjIyMgUGVyZm9ybSBiYXNpY3MiLCJzdGFydCI6NTM1
 LCJlbmQiOjU1M319LCJjb21tZW50cyI6eyJ6cEM3a0N5Tnp1Rz
 hlUHpvIjp7ImRpc2N1c3Npb25JZCI6InB3SHN1eHVzaTZuZE9F
 aGciLCJzdWIiOiJnaDoxNDg2MzUwOCIsInRleHQiOiJPTiIsIm
-NyZWF0ZWQiOjE2MDc2MzE0NDI2OTR9fSwiaGlzdG9yeSI6WzEz
-NDM3OTM2NDNdfQ==
+NyZWF0ZWQiOjE2MDc2MzE0NDI2OTR9fSwiaGlzdG9yeSI6WzU4
+NTk3NTQ5MywxMzQzNzkzNjQzXX0=
 -->
