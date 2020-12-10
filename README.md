@@ -1,9 +1,8 @@
-# Python Initiatives
-
-<img src="./images/python.png"
+# Python Initiatives <img src="./images/python.png"
      alt="python logo"
      style="float: center; margin-right: 10px;"
-     width=32px height=32px />
+     width=28px height=28px />
+
 
 Solutions over Pycharm and code based in Python2.7 and Python3 
 
@@ -27,6 +26,6 @@ RleHQiOiIjIyMgUGVyZm9ybSBiYXNpY3MiLCJzdGFydCI6NTM1
 LCJlbmQiOjU1M319LCJjb21tZW50cyI6eyJ6cEM3a0N5Tnp1Rz
 hlUHpvIjp7ImRpc2N1c3Npb25JZCI6InB3SHN1eHVzaTZuZE9F
 aGciLCJzdWIiOiJnaDoxNDg2MzUwOCIsInRleHQiOiJPTiIsIm
-NyZWF0ZWQiOjE2MDc2MzE0NDI2OTR9fSwiaGlzdG9yeSI6Wy0x
-NjIyODQ2MDEzXX0=
+NyZWF0ZWQiOjE2MDc2MzE0NDI2OTR9fSwiaGlzdG9yeSI6WzEz
+NDM3OTM2NDNdfQ==
 -->
