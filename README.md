@@ -1,7 +1,9 @@
-# Python Initiatives <img src="./images/python.png"
+# Python Initiatives 
+<img src="./images/python.png"
      alt="python logo"
      style="float: center; margin-right: 10px;"
      width=28px height=28px />
+
 
 
 Solutions over Pycharm and code based in Python2.7 and Python3 
